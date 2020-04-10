@@ -1,3 +1,9 @@
+/*A city's skyline is the outer contour of the silhouette formed by all the buildings in that city when viewed from a distance.
+The following program outputs the skyline for a given input of buildings.
+The geometric information of each building is represented by a triplet of integers [Li, Hi, Ri], where Li and Ri are the x coordinates
+of the left and right edge of the ith building, respectively, and Hi is its height.
+The output is the list of points that defines the skyline.*/
+
 #include<bits/stdc++.h>
 using namespace std;
 vector<int> *v;
@@ -66,6 +72,7 @@ void getskyline(int start,int ends)
 int main()
 {
     int n,i,j,temp;
+    cout<<"Enter number of buildings:";
     cin>>n;
     v= new vector<int>[n];
     for(i=0;i<n;i++)
@@ -89,12 +96,3 @@ int main()
              << " ";
     }
 }
-/* 8
-1 11 5
-2 6 7
-3 13 9
-12 7 16
-14 3 25
-19 18 22
-23 13 29
-24 4 28 */
