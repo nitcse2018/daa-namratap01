@@ -11,11 +11,11 @@ typedef pair<int,int> pairs;
 vector<pairs> skyline;
 vector<pairs> res;
 
-void mergeskyline(int start, int ends)
+void mergeskyline(int start,int mid, int ends)
 {
     start=start*2;
     ends=(ends*2)+1;
-    int mid=(start+ends)/2;
+    mid=(mid*2)+1;
     int i=start,
         j=mid+1,
         h1=0,h2=0;
@@ -65,14 +65,13 @@ void getskyline(int start,int ends)
         int mid=(start+ends)/2;
         getskyline(start,mid);
         getskyline(mid+1,ends);
-        mergeskyline(start,ends);
+        mergeskyline(start,mid,ends);
     }
 }
 
 int main()
 {
     int n,i,j,temp;
-    cout<<"Enter number of buildings:";
     cin>>n;
     v= new vector<int>[n];
     for(i=0;i<n;i++)
@@ -96,3 +95,27 @@ int main()
              << " ";
     }
 }
+/* INPUT1:
+8
+1 11 5
+2 6 7
+3 13 9
+12 7 16
+14 3 25
+19 18 22
+23 13 29
+24 4 28
+OUTPUT:
+(1, 11) (3, 13) (9, 0) (12, 7) (16, 3) (19, 18) (22, 3) (23, 13) (29, 0)
+
+INTPUT2:
+5
+2 10 9
+3 15 7
+5 12 12
+15 10 20
+19 8 24
+OUTPUT:
+(2, 10) (3, 15) (7, 12) (12, 0) (15, 10) (20, 8) (24, 0)
+
+*/
