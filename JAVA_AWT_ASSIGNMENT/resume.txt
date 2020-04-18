@@ -5,7 +5,7 @@ Name : Ms. NAMRATA PRASAD
 
 ______________________________________________________CAREER OBJECTIVE_________________________________________________________________
 
-Honestly, just want live and eat and sleep but be self sufficient too
+Honestly, just want to live and eat and sleep but be self sufficient too
 
 _________________________________________________________PERSONAL INFO_________________________________________________________________
 
@@ -41,7 +41,8 @@ ___________________________________________________________SKILLS_______________
 4. JavaScript
 5. Bootstrap
 6. HTML
-7. MongoDB
+7. CSS
+8. MongoDB
 
 ______________________________________________INTERNSHIPS AND RELEVANT TRAININGS_________________________________________________________
 
