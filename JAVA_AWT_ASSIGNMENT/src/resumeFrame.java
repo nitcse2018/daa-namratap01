@@ -1,5 +1,3 @@
-package javaFrames;
-
 import java.awt.*;
 import java.awt.event.*;
 import java.io.FileWriter;
@@ -74,12 +72,12 @@ public class resumeFrame extends Frame implements ActionListener,MouseListener{
 		gen.setBounds(200, 130, 70, 30);
 		gen.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 13));
 		gender = new CheckboxGroup();  
-        Checkbox male = new Checkbox("Male", gender, false);  
+        	Checkbox male = new Checkbox("Male", gender, false);  
 		male.setForeground(color);
-        male.setBounds(300,120, 50,50);    
-        Checkbox female = new Checkbox("Female", gender, false);   
+        	male.setBounds(300,120, 50,50);    
+        	Checkbox female = new Checkbox("Female", gender, false);   
 		female.setForeground(color);
-        female.setBounds(400,120, 70,50);    
+        	female.setBounds(400,120, 70,50);    
 		ta2=new TextArea("Address");
 		ta2.setBounds(10, 165, 490, 45);
 		ta2.addMouseListener(this);
