@@ -1,1 +1,2 @@
-# JAVA ASSIGNMENT USING AWT
+# JAVA ASSIGNMENT
+### A Java frame for Resume Builder using AWT Toolkit
