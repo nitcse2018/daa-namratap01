@@ -47,6 +47,11 @@ int main()
 
 }
 /*
+INPUT:
+Number of vertices:
+6
+Number of edges:
+9
 0 1
 1 2
 1 2
@@ -56,4 +61,7 @@ int main()
 4 1
 4 0
 4 5
+
+OUTPUT:
+4 1 0 5 2 3
 */
