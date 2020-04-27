@@ -68,6 +68,9 @@ int main()
 
 }
 /*
+Number of vertices:
+6
+Number of edges:
 6
 0 1
 1 2
@@ -75,4 +78,7 @@ int main()
 2 5
 3 5
 3 4
+
+OUPUT:
+The graph has a cycle
  */
