@@ -73,6 +73,10 @@ int main(){
 
 }
 /*
+INPUT:
+Number of vertices:
+9
+Number of edges:
 14
 0 1 4
 0 7 8
@@ -88,4 +92,17 @@ int main(){
 6 7 1
 6 8 6
 7 8 7
+Initial vertex:
+0
+
+OUTPUT:
+The selected edges are:
+0 - 1  Weight: 4
+1 - 2  Weight: 8
+2 - 3  Weight: 7
+3 - 4  Weight: 9
+2 - 5  Weight: 4
+5 - 6  Weight: 2
+6 - 7  Weight: 1
+2 - 8  Weight: 2
 */
