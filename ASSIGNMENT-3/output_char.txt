@@ -1,0 +1,34 @@
+
+Java Programming Tutorial
+Basic Input & Output (I/O)
+
+Programming simple I/O operations is easy, which involves only a few classes and methods. You could do it by looking at a few samples. Programming efficient, portable I/O is extremely difficult, especially if you have to deal with different character sets. This explains why there are so many I/O packages (nine in JDK 1.7)!
+
+JDK has two sets of I/O packages:
+
+    1. the Standard I/O (in package java.io), introduced since JDK 1.0 for stream-based I/O, and
+    2. the New I/O (in packages java.nio), introduced in JDK 1.4, for more efficient buffer-based I/O.
+
+JDK 1.5 introduces the formatted text-I/O via new classes java.util.Scanner and Formatter, and C-like printf() and format() methods for formatted output using format specifiers.
+
+JDK 1.7 enhances supports for file I/O via the so-called NIO.2 (non-blocking I/O) in new package java.nio.file and its auxiliary packages. It also introduces a new try-with-resources syntax to simplify the coding of close() method.
+
+1. File and Directory
+	1.1  Class java.io.File (Pre-JDK 7)
+
+	The class java.io.File can represent either a file or a directory. [JDK 1.7 introduces a more versatile java.nio.file.Path, which overcomes many limitations of java.io.File.]
+
+	A path string is used to locate a file or a directory. Unfortunately, path strings are system dependent, e.g., "c:\myproject\java\Hello.java" in Windows or 		"/myproject/java/Hello.java" in Unix/Mac.
+
+    -Windows use back-slash '\' as the directory separator; while Unixes/Mac use forward-slash '/'.
+    -Windows use semi-colon ';' as path separator to separate a list of paths; while Unixes/Mac use colon ':'.
+    -Windows use "\r\n" as line delimiter for text file; while Unixes use "\n" and Mac uses "\r".
+    -The "c:\" or "\" is called the root. Windows supports multiple roots, each maps to a drive (e.g., "c:\", "d:\"). Unixes/Mac has a single root ("\").
+
+    A path could be absolute (beginning from the root) or relative (which is relative to a reference directory). Special notations "." and ".." denote the current directory and the 		    parent directory, respectively.
+
+    The java.io.File class maintains these system-dependent properties, for you to write programs that are portable:
+
+	-Directory Separator: in static fields File.separator (as String) and File.separatorChar. [They failed to follow the Java naming convention for constants adopted since JDK 1.2.] 		 As mentioned, Windows use backslash '\'; while Unixes/Mac use forward slash '/'.
+
+    	-Path Separator: in static fields File.pathSeparator (as String) and File.pathSeparatorChar. As mentioned, Windows use semi-colon ';' to separate a list of paths; while Unixes/Mac 		 use colon ':'.
