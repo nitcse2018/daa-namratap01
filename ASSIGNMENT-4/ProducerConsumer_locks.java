@@ -1,4 +1,3 @@
-package first;
 import java.util.concurrent.locks.*;
 import java.util.Queue;
 import java.util.LinkedList;
